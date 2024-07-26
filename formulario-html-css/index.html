@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Pesquisa de Jogadores</h1>
+        <form>
+            <fieldset>
+            <table>
+                <tr>
+                    <td><strong>Nome:</strong></td>
+                    <td><input type="text" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Sexo:</strong></td>
+                    <td>
+                        <input type="radio" name="sexo" value="masculino" required> Masculino
+                        <input type="radio" name="sexo" value="feminino" required> Feminino
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Faixa de idade:</strong></td>
+                    <td>
+                        <select name="faixaIdade" required>
+							<option value="" disabled selected hidden>Selecione</option>
+                            <option value="2">17 anos ou menos</option>
+                            <option value="3">Entre 18 e 30 anos</option>
+                            <option value="4">Entre 31 e 40 anos</option>
+                            <option value="5">41 anos ou mais</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Gênero de jogo preferido:</strong></td>
+                    <td>
+                        <select name="genero" multiple size="4" required>
+                            <option value="acaoEAventura">Ação e Aventura</option>
+                            <option value="esportes">Esportes</option>
+                            <option value="simulação">Simulação</option>
+                            <option value="rpg">RPG (Role-Playing Games)</option>
+                            <option value="fps">FPS/Jogos de Tiro</option>
+                            <option value="estrategia">Estratégia</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Frequência em que você joga:</strong></td>
+                    <td>
+                        <select name="frequencia" required>
+							<option value="" disabled selected hidden>Selecione</option>
+                            <option value="2">Diariamente</option>
+                            <option value="3">Várias vezes por semana</option>
+                            <option value="4">Várias vezes por mês</option>
+                            <option value="5">Várias vezes por ano</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Em qual(is) dispositivo(s) você costuma jogar:</strong></td>
+                    <td>
+                        <input type="checkbox" name="dispositivo" value="pc" checked>PC
+                        <input type="checkbox" name="dispositivo" value="laptop">Laptop
+                        <input type="checkbox" name="dispositivo" value="dispmoveis">Dispositivos móveis
+                        <input type="checkbox" name="dispositivo" value="console">Console
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Dos jogos seguintes, qual(is) você gosta de jogar:</strong></td>
+                    <td>
+                        <div>
+                        <input type="checkbox" name="jogo" value="cyberpunk" checked>Cyberpunk
+                        <input type="checkbox" name="jogo" value="fifa">FIFA
+                        <input type="checkbox" name="jogo" value="thesims">The Sims
+                        <input type="checkbox" name="jogo" value="baldur">Baldur's Gate
+                        <input type="checkbox" name="jogo" value="epic">Epic Seven
+                        <input type="checkbox" name="jogo" value="epic">Clash of Clans
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>(Opcional)Dos jogos já divulgados para este ano, cite os que você deseja jogar:</strong></td>
+                    <td><textarea name="opcional" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="enviar" type="submit" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
